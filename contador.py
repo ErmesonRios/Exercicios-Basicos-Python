@@ -1,12 +1,14 @@
 import time
+import os
 
-segundos = []
-
-for segundos in range(0, 100):
-    if segundos %2 == 0:
-        print("\ne par")
-    else:
-        print("\ne impar")
+lista = []
+for i in range(1, 100):
+    lista.append(i)
+    time.sleep(0.1)
+for i in lista:
+    if i == 46:
+        print("Encontrei o número 46!")
+        break
     
-    print(f"\n{segundos} segundos")
-    time.sleep(1)
+    print(i)
+        
